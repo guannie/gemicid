@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Amino Acids Form</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 10px;
+}
+</style>
+<script>
+function add(){
+        <!--alert('Are you try to add something?');-->
+        window.location.href = "AminoPages.html";
+    }
+    onload=cloneRow;
+</script>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="indexAdmin.html">
+                <img class="img-responsive2" src="gemicid.jpg" style="width:215px;height:37px;"></a>
+        </div><!-- /.navbar-header -->
+
+        <!-- /.navbar-top-rightr -->
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a></li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                </ul><!-- /.dropdown-user -->
+            </li><!-- /.dropdown -->
+        </ul><!-- /.navbar-top-links -->
+
+        <!-- SIDE BAR -->
+		<div class="navbar-default sidebar" role="navigation">
+		    <div class="sidebar-nav navbar-collapse">
+			    <ul class="nav" id="side-menu">
+				    <li class="sidebar-search">
+				        <div class="input-group custom-search-form">
+					        <input type="text" class="form-control" placeholder="Search...">
+					        <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">
+					            <i class="fa fa-search"></i>
+					        </button>
+					        </span>
+				        </div>
+			        </li>
+				    <li><a href="indexAdmin.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+			        <li> <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Configuration<span class="fa arrow"></span></a>
+				    <ul class="nav nav-second-level">
+			            <li><a href="AminoPages.html">Amino Acids</a></li>
+				        <li><a href="GenesPages.html">Genes Bank</a></li>
+                        <li><a href="UserPages.html">User</a></li>
+			        </ul>
+			        </li>
+			        <li><a href="report.html"><i class="fa fa-table fa-fw"></i>Report</a></li>
+			    </ul>
+		    </div><!-- /.sidebar-collapse -->
+
+            <br><br>
+                <!-- /.panel -->
+                <div class="panel-heading">
+                    <i class="fa fa-question-circle-o fa-fw"></i><strong>Help Desk</strong>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <p>Please contact us via call or email at anytime you require our assistance.</p>
+                    <strong class="primary-font; fa fa-mobile"> Tel: 07-7777777</strong><br>
+                    <strong class="primary-font; fa fa-envelope-square"> Email: admin@gemicid.com</strong>
+                </div>
+
+        </div><!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Create Amino Acids</h1>
+            </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+            
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Amino Acids Details</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control" placeholder="Arginine">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Picture</label>
+                                        <input type="file">
+                                    </div>
+									<label>Details Information</label>
+									<table width:100%;>
+									<tr>
+									    <td><label>Polarity</label></td>
+									    <td><input class="form-control" placeholder="Non-polar"></td>
+									</tr>
+                                    <tr>
+                                        <td><label>Acidity</label></td>
+                                        <td><input class="form-control" placeholder="Neutral"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Codon</label></td>
+                                        <td><input class="form-control" placeholder="GTAATCGATGCCATTA"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Esential</label>
+                                        <td><input class="form-control" placeholder="Non-Essential"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Isoelectric Point</label>
+                                        <td><input class="form-control" placeholder="4.08"></td>
+                                    </tr>
+									<tr>
+									    <td><label>Formula</label>
+									    <td><input class="form-control" placeholder="C4H9N2O5"></td>
+									</tr>
+                                    <tr>
+                                        <td><label>IUPAC Name</label></td>
+                                        <td><input class="form-control" placeholder="(2S)-2-aminopropanoic acid"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Molar Mass</label>
+                                        <td><input class="form-control" placeholder="90.32 g/mol"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Hydropathy</label>
+                                        <td><input class="form-control" placeholder="2.3"></td>
+                                    </tr>
+									<tr>
+									    <td><label>melting point</label></td>
+									    <td><input class="form-control" placeholder="250 C"></td>
+									</tr>
+									<tr>
+									    <td><label>boiling point</label></td>
+									    <td><input class="form-control" placeholder="200 C"></td>
+									</tr>
+                                    <tr>
+                                        <td><label>Density</label>
+                                        <td><input class="form-control" placeholder="2.034 g/cm^3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Water Solubility</label>
+                                        <td><input class="form-control" placeholder="155 g/L"></td>
+                                    </tr>
+
+								    </table>
+
+                                <button type="button" class="btn btn-info" onclick="add()">Submit Button</button>
+                                <button type="reset" class="btn btn-warning">Reset Button</button>
+                                </form>
+                            </div><!-- /.col-lg-6 (nested) -->
+                        </div><!--row-->
+                    </div> <!-- /.panel-body -->
+                </div><!-- /.panel -->
+            </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+    </div><!-- /#page-wrapper -->
+</div><!-- /#wrapper -->
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" align="middle">
+                    <p>Copyright &copy; Gemicid 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

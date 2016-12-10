@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Amino Acid Pages</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+ <style type="text/css">
+     table {
+        table-layout: auto;
+    }</style>
+
+<script>
+    var clone
+function cloneRow() {
+var row=document.getElementById('tambahrow').getElementsByTagName('tr');
+var index=row.length;
+clone=row[index-1].cloneNode(true);
+var inputs=clone.getElementsByTagName('input'), inp, i=0;
+while(inp=inputs[i++]){
+    inp.name=inp.name.replace(/\d/g,'')+(index+1);
+}
+}
+function tambah(){
+    var x=document.getElementById('tambahrow').getElementsByTagName('tbody')[0];
+    x.appendChild(clone);
+    cloneRow();
+}
+onload=cloneRow;
+
+function buang() {
+    document.getElementById("tambahrow").deleteRow(0);
+}
+
+</script>
+
+<h1>Create a Amino Acids</h1>
+
+    <table id="tambahrow">
+        <form id="form2" action="" name="form2" method="post">
+
+            <tr><td style="width:250px"><div class="form-group">
+            <label class="col-md-12">No.</label>
+            <div class="col-md-15">
+                <input type="text" name="txt_item" class="form-control"> <!--utk input text-->
+                <span class="help-block"></span>
+            </div>
+        </div></td>
+
+         <td style="width:250px"><div class="form-group">
+            <label class="col-md-12">Name</label>
+            <div class="col-md-15">
+                <input type="text" name="txt_desc" class="form-control"> <!--utk input text-->
+                <span class="help-block"></span>
+            </div>
+        </div></td>
+
+        <td style="width:250px"><div class="form-group">
+	<label class="col-md-12">Details Information</label>
+	<div class="col-md-15">
+	<input type="text" name="txt_price" class="form-control">
+	<span class="help-block"></span>
+	</div>
+	</div></td></tr>
+        </table>
+
+         <br>
+	 <br>
+	 <div class="form-group col-md-12">
+	 <input type="submit" name="submit" value="submit" class="btn btn-info">
+	 <input type="button" value="Add" onclick="tambah()" class="btn btn-primary">
+	 <input type="button" value="delete" onclick="buang()" class="btn btn-danger">
+
+	 </div>
+	 </form>
+</div>
+</body>
+</html>
+
+

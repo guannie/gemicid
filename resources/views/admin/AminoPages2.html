@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Amino Acid Pages</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<script>
+    function edit() {
+    href="updateAmino.html";
+    }
+
+	function tambah(){
+	    <!--alert('Are you try to add something?');-->
+        window.location.href = "createAmino.html";
+	}
+	onload=cloneRow;
+
+	function buang(r) {
+	    alert('Are you sure want to delete?');
+	    var i= r.parentNode.parentNode.rowIndex;
+	    document.getElementById("tambahrow").deleteRow(i);
+	}
+
+	function next(){
+			window.location.href = "AminoPages.html";
+	}
+</script>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	            <a class="navbar-brand" href="indexAdmin.html">
+	            	<img class="img-responsive2" src="gemicid.jpg" style="width:215px;height:37px;"></a>
+	    </div><!-- /.navbar-header -->
+
+	     <!-- /.dropdown navbar-top-right-->
+	    <ul class="nav navbar-top-links navbar-right">
+	        <li class="dropdown">
+	            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+	                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+	            </a>
+	            <ul class="dropdown-menu dropdown-user">
+	                <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a></li>
+	                <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+	                <li class="divider"></li>
+	                <li><a href="loginAdmin.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+	            </ul><!-- /.dropdown-user -->
+	        </li><!-- /.dropdown -->
+	    </ul><!-- /.navbar-top-links -->
+
+        <!-- SIDE BAR -->
+	    <div class="navbar-default sidebar" role="navigation">
+			<div class="sidebar-nav navbar-collapse">
+			    <ul class="nav" id="side-menu">
+			        <li class="sidebar-search">
+			            <div class="input-group custom-search-form">
+			                <input type="text" class="form-control" placeholder="Search...">
+			                <span class="input-group-btn">
+			                <button class="btn btn-default" type="button">
+			                    <i class="fa fa-search"></i>
+			                </button>
+			                </span>
+			            </di><!-- /input-group -->
+			        </li>
+			        <li><a href="indexAdmin.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+			        <li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Configuration<span class="fa arrow"></span></a>
+			            <ul class="nav nav-second-level">
+			                <li><a href="AminoPages.html">Amino Acids</a></li>
+			                <li><a href="GenesPages.html">Genes Bank</a></li>
+			                <li><a href="UserPages.html">User</a></li>
+			            </ul>
+			        </li>
+			        <li><a href="../../Lee_admin_reporting_page/admin reporting page/index.html"><i class="fa fa-table fa-fw"></i>Report</a></li>
+	            </ul>
+	        </div><!-- /.sidebar-collapse -->
+
+	        <br><br>
+                <!-- /.panel -->
+                <div class="panel-heading">
+                    <i class="fa fa-question-circle-o fa-fw"></i><strong>Help Desk</strong>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <p>Please contact us via call or email at anytime you require our assistance.</p>
+                    <strong class="primary-font; fa fa-mobile"> Tel: 07-7777777</strong><br>
+                    <strong class="primary-font; fa fa-envelope-square"> Email: admin@gemicid.com</strong>
+                </div>
+
+		</div><!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Amino Acids</h1>
+                </div>
+
+                <!-- /.panel-heading -->
+			    <div class="panel-body">
+			    <i class="fa fa-arrow-left fa-4x" aria-hidden="true" onclick="next()"></i>
+			    <table width="100%" class="table table-striped table-bordered table-hover" id="tambahrow">
+				<thead>
+					<tr>
+					    <th>No.</th>
+					    <th>Name</th>
+					    <th>Details Information</th>
+					    <th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+					    <td><ol>11.<ol></td>
+					    <td>Leucine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary" onclick="edit()">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+					</tr>
+					<tr class="even gradeC">
+					    <td><ol>12.<ol></td>
+					    <td>Lysine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>13.<ol></td>
+					    <td>Methionine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>14.<ol></td>
+					    <td>Phenylalanine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>15.<ol></td>
+					    <td>Proline</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>16.<ol></td>
+					    <td>Serine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>17.<ol></td>
+					    <td>Threonine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>18.<ol></td>
+					    <td>Tryptophan</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>19.<ol></td>
+					    <td>Tyrosine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                    <tr class="even gradeC">
+					    <td><ol>20.<ol></td>
+					    <td>Valine</td>
+					    <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Amino1">View Details</button></td>
+					    <td><button type="button" class="btn btn-primary">UPDATE</button>
+					        <button type="button" class="btn btn-danger" onclick="buang(this)">DELETE</button></td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <button type="button" class="btn btn-info" onclick="tambah()">CREATE</button>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div><!-- /#page-wrapper -->
+</div><!-- /#wrapper -->
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" align="middle">
+                    <p>Copyright &copy; Gemicid 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

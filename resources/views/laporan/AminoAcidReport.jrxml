@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-12-07T07:43:35 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GemicidReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9474b118-d126-4106-a98f-a11872807a60">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
+	<subDataset name="Dataset1" uuid="ab0d5fb8-9c50-40fe-825e-9d717319cb48">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[SELECT *
+FROM amino]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="symbol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="picture" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="polarity" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="acidity" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="esential" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="isoelectric" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="formula" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="iupac" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="molar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hydropathy" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="melting" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="boiling" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="density" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="water" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="36" width="290" height="30" uuid="89f290b2-e7bb-4bcd-8842-6a9a473ac637"/>
+				<textElement textAlignment="Center">
+					<font fontName="Berlin Sans FB Demi" size="26"/>
+				</textElement>
+				<text><![CDATA[AMINO ACID REPORT]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="410" y="30" width="141" height="50" uuid="e1a1966f-2bca-412c-b677-379482272228"/>
+				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
+			</image>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="464" y="0" width="87" height="20" uuid="1e39c86b-4e48-428a-a717-adcc278f806f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame">
+				<reportElement x="20" y="11" width="80" height="80" uuid="443f7199-48f4-4aa0-96e4-ed0e7b5e4105"/>
+				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="15" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="59">
+			<staticText>
+				<reportElement x="10" y="10" width="20" height="20" uuid="cff64d55-6d30-41ef-8df8-aa744f739cf4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="9" width="50" height="21" uuid="995210b7-fa89-484a-9469-b5d8a616e4d5"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="10" width="60" height="20" uuid="65736491-bea7-4240-a590-9392801b9899"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[SYMBOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="9" width="66" height="21" uuid="d62ee5dc-dffe-47ee-9880-ade71598182c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[FORMULA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="9" width="80" height="20" uuid="6f1438a7-0955-4ce7-ab70-bb2fb2fa1ae0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[IUPAC NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="468" y="10" width="60" height="19" uuid="58f4c431-c0ae-47e9-bee7-a2677840a6c5"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[IMAGE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="560" height="1" uuid="a316991d-b7aa-4182-a15b-5efa78db9050"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="1" width="1" height="48" uuid="526f644a-780f-4ec7-8daf-704058abb0f5"/>
+			</line>
+			<line>
+				<reportElement x="2" y="40" width="558" height="1" uuid="a21fc4a3-0972-4922-b111-04dd2b3ca368"/>
+			</line>
+			<line>
+				<reportElement x="560" y="1" width="1" height="40" uuid="a5c3bb04-4a82-475d-9bb1-36e9b6f3bad8"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="110" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<line>
+				<reportElement x="450" y="-58" width="1" height="158" uuid="a26db6e3-7239-4f88-9b3f-77b14234f68e"/>
+			</line>
+			<textField>
+				<reportElement x="10" y="0" width="20" height="30" uuid="25baa97a-46ce-4759-9d22-f514c12a147e"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="-10" width="1" height="111" uuid="eedbbc10-1c7f-4e34-b0f3-6b88f9ee350e"/>
+			</line>
+			<line>
+				<reportElement x="40" y="-58" width="1" height="159" uuid="3f9100f2-fc94-4107-8141-e9cfdd955ec2"/>
+			</line>
+			<line>
+				<reportElement x="140" y="-58" width="1" height="159" uuid="5cd55bdc-9990-424a-98bb-44adbbdfc0da"/>
+			</line>
+			<line>
+				<reportElement x="230" y="-58" width="1" height="158" uuid="a86dbbd8-af5a-4f01-a4b6-538842cae2e6"/>
+			</line>
+			<line>
+				<reportElement x="310" y="-58" width="1" height="158" uuid="16f1fe7a-2bfe-464d-bccb-abeaa4e39552"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="100" width="561" height="1" uuid="74173b55-b176-4614-9629-4b075e8271bb"/>
+			</line>
+			<line>
+				<reportElement x="560" y="-20" width="1" height="120" uuid="57ba233e-4141-4a4b-8dc2-b4d693320659"/>
+			</line>
+			<textField>
+				<reportElement x="50" y="0" width="80" height="30" uuid="49f5ff0a-f838-47b5-b0e3-096efcf2a085"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="70" height="30" uuid="3a1c711b-a417-44c0-a46d-1e9287ae6381"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{symbol}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="60" height="30" uuid="45c341f5-8e1a-4e5b-9155-3abacb69f1cb"/>
+				<textFieldExpression><![CDATA[$F{formula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="120" height="30" uuid="089bb461-eb5a-407e-867f-7daa480dacf1"/>
+				<textFieldExpression><![CDATA[$F{iupac}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame">
+				<reportElement x="464" y="0" width="87" height="80" uuid="bacb047b-4bcb-4c47-9d18-508b871c754d"/>
+				<imageExpression><![CDATA["http://localhost//gemicidv2//public//upload//amino//"+$F{picture}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="90" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="44" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement x="510" y="0" width="50" height="40" uuid="5d553299-ca6a-458f-8500-f1149eb1d6c9"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="480" y="0" width="30" height="20" uuid="87a82e24-38b4-456e-8783-869267fee2d2"/>
+				<text><![CDATA[Page]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="30" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</summary>
+</jasperReport>
