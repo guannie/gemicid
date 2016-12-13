@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
-<!-- 2016-12-07T07:43:35 -->
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2016-12-11T21:55:03 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GemicidReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9474b118-d126-4106-a98f-a11872807a60">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="gemicid"/>
 	<subDataset name="Dataset1" uuid="ab0d5fb8-9c50-40fe-825e-9d717319cb48">
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
 		<queryString>
@@ -14,7 +14,7 @@
 		<![CDATA[SELECT *
 FROM amino]]>
 	</queryString>
-	<field name="id" class="java.lang.Integer">
+	<field name="id" class="java.lang.Long">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="name" class="java.lang.String">
@@ -85,7 +85,7 @@ FROM amino]]>
 			</staticText>
 			<image scaleImage="FillFrame">
 				<reportElement x="410" y="30" width="141" height="50" uuid="e1a1966f-2bca-412c-b677-379482272228"/>
-				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["C:/Users/guanxuan95/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
 			</image>
 			<textField pattern="dd MMMMM yyyy">
 				<reportElement x="464" y="0" width="87" height="20" uuid="1e39c86b-4e48-428a-a717-adcc278f806f"/>
@@ -93,7 +93,7 @@ FROM amino]]>
 			</textField>
 			<image scaleImage="FillFrame">
 				<reportElement x="20" y="11" width="80" height="80" uuid="443f7199-48f4-4aa0-96e4-ed0e7b5e4105"/>
-				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["C:/Users/guanxuan95/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
 			</image>
 		</band>
 	</title>
@@ -208,7 +208,7 @@ FROM amino]]>
 			</textField>
 			<image scaleImage="FillFrame">
 				<reportElement x="464" y="0" width="87" height="80" uuid="bacb047b-4bcb-4c47-9d18-508b871c754d"/>
-				<imageExpression><![CDATA["http://localhost//gemicidv2//public//upload//amino//"+$F{picture}]]></imageExpression>
+				<imageExpression><![CDATA["http://localhost//gemicid//public//upload//amino//"+$F{picture}]]></imageExpression>
 			</image>
 		</band>
 	</detail>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
-<!-- 2016-12-07T07:45:48 -->
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2016-12-11T22:07:48 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GemicidReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9474b118-d126-4106-a98f-a11872807a60">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="gemicid"/>
 	<subDataset name="Dataset1" uuid="ab0d5fb8-9c50-40fe-825e-9d717319cb48">
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
 		<queryString>
@@ -86,11 +86,11 @@ where id=$P{Alanine}]]>
 			</textField>
 			<image scaleImage="FillFrame">
 				<reportElement x="100" y="0" width="90" height="79" uuid="443f7199-48f4-4aa0-96e4-ed0e7b5e4105"/>
-				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["C:/Users/guanxuan95/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
 			</image>
 			<image scaleImage="FillFrame">
 				<reportElement x="260" y="6" width="180" height="68" uuid="e1a1966f-2bca-412c-b677-379482272228"/>
-				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["C:/Users/guanxuan95/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
 			</image>
 		</band>
 	</title>
@@ -187,7 +187,7 @@ where id=$P{Alanine}]]>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<imageExpression><![CDATA["http://localhost//gemicidv2//public//upload//amino//"+$F{picture}]]></imageExpression>
+				<imageExpression><![CDATA["http://localhost//gemicid//public//upload//amino//"+$F{picture}]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement mode="Transparent" x="82" y="187" width="130" height="20" forecolor="#A8A3A2" backcolor="#912523" uuid="b665387d-4d49-4e17-9aa5-f15eb1d1f3f7">
@@ -251,7 +251,7 @@ where id=$P{Alanine}]]>
 				<text><![CDATA[SYMBOL]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="213" y="217" width="265" height="20" forecolor="#FFFFFF" backcolor="#A8A3A2" uuid="fe67f7dc-73f0-4bfd-af4b-456eb6926a8a">
+				<reportElement mode="Opaque" x="212" y="217" width="265" height="20" forecolor="#FFFFFF" backcolor="#A8A3A2" uuid="fe67f7dc-73f0-4bfd-af4b-456eb6926a8a">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>

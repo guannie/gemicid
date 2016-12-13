@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
-<!-- 2016-12-07T14:42:52 -->
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2016-12-11T22:03:08 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GemicidReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff0cb4bc-c1a2-422a-8e4b-6f8200512b71">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local db"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="gemicid"/>
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<queryString>
 		<![CDATA[select * from gene]]>
@@ -55,11 +55,11 @@
 			</textField>
 			<image scaleImage="FillFrame">
 				<reportElement x="20" y="16" width="80" height="80" uuid="1aec429f-d9ac-4304-b6c5-acb2a57b5b03"/>
-				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["C:/Users/guanxuan95/JaspersoftWorkspace/MyReports/gemicid logo.jpg"]]></imageExpression>
 			</image>
 			<image scaleImage="FillFrame">
 				<reportElement x="410" y="30" width="140" height="50" uuid="b5310b10-49f4-45f4-961f-a9ad2058bc3c"/>
-				<imageExpression><![CDATA["C:/Users/User/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["C:/Users/guanxuan95/JaspersoftWorkspace/MyReports/UTM-LOGO-brand-.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="120" y="40" width="270" height="30" uuid="92ac3542-4697-4b6c-9154-25b9a2a5efc8"/>
